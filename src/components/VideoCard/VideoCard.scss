@@ -1,0 +1,38 @@
+.video-card {
+  width: 500px;
+  min-height: 400px;
+  padding: 20px;
+  color: #ffffff;
+  transition: linear 0.1s;
+  &:hover {
+    transform: scale(1.09);
+  }
+  &__image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  &__title {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  &__description {
+    margin-bottom: 0;
+  }
+  &__likes {
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.video-card:hover > .video-card__info {
+  display: flex;
+}

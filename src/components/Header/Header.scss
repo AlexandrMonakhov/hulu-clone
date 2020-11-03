@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+  &__logo {
+    height: 80px;
+    object-fit: contain;
+  }
+  &-icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    & .MuiSvgIcon-root {
+      font-size: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      cursor: pointer;
+      &--active > span {
+        display: inline-flex !important;
+      }
+      span {
+        display: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: small;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      &:hover > span {
+        display: block;
+      }
+    }
+  }
+}
